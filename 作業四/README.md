@@ -9,7 +9,7 @@
 ## 說明
 
  **percolation** 與 **epidemics** 的簡單模擬。
-percolation模擬包含不同removal方式，epidemics模擬則是模擬均勻感染能力和非均勻感染能力的disease之擴散動態。
+percolation模擬包含不同removal方式，epidemics模擬則是模擬均勻感染能力和非均勻感染能力的病毒之擴散動態。
 
 
 **工具:** &nbsp; networkx, graph_tool, numpy
