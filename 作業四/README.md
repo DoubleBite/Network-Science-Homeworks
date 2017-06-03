@@ -11,7 +11,7 @@
  **percolation** 與 **epidemics** 的簡單模擬。
 percolation模擬包含不同removal方式，epidemics模擬則是模擬均勻感染能力和非均勻感染能力的disease之擴散動態。
 
----
+
 **工具:** &nbsp; networkx, graph_tool, numpy
 
 ---
@@ -98,13 +98,16 @@ Run this command: &nbsp;
 - [eigenvector centrality (graph_gool)](https://graph-tool.skewed.de/static/doc/centrality.html#graph_tool.centrality.eigenvector)
 
 - [graph deep copy (graph tool)](https://graph-tool.skewed.de/static/doc/graph_tool.html#graph_tool.Graph)
+    
     g.copy()
 
 - [Remove vertex (graph_tool)](https://graph-tool.skewed.de/static/doc/graph_tool.html#graph_tool.Graph.remove_vertex)
+    
     g.remove_vertex(node)
 
 
 - [Getting “ValueError: invalid vertex descriptor” when removing vertices](https://stackoverflow.com/questions/33614542/getting-valueerror-invalid-vertex-descriptor-when-removing-vertices)
+    
     必須先deep copy一個graph，才能做remove的動作，否則原先的vertices被移除之後就不屬於該graph，會導致此error
 
 - 註：不能用remove vertex的方法，因為vertex的index會重排，要用remove edge的方法，但是因為時間緊迫，所以將錯就錯了＠＠
